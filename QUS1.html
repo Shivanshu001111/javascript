@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function filterOddNumbers(arr, isEven) {
+  return arr.filter(num => !isEven(num));
+}
+
+// Callback function
+function isEven(num) {
+  return num % 2 === 0;
+}
+
+// Test the function
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let filteredNumbers = filterOddNumbers(numbers, isEven);
+console.log(filteredNumbers);
+
+</script>
